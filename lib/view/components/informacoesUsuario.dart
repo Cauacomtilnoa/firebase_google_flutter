@@ -9,16 +9,16 @@ Widget InformacaoUsuario(String fotoUsuario, String nomeUsuario, String emailUsu
         children: [
           CircleAvatar(
             radius: 40,
-            backgroundImage: NetworkImage(fotoUsuario.toString() ?? ''),
+            backgroundImage: NetworkImage(fotoUsuario.toString()),
           ),
           SizedBox(height: 16),
           Text(
-            'Bem-vindo, ${emailUsuario ?? 'Usuário'}!',
+            'Bem-vindo, ${emailUsuario}!',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 8),
           Text(
-            emailUsuario.toString() ?? '',
+            emailUsuario.toString(),
             style: TextStyle(fontSize: 16),
           ),
           SizedBox(height: 20),
